@@ -3,7 +3,7 @@
 
 int shared_data = 0;
 
-void* thread_func(void* arg)
+void *thread_func(void *arg)
 {
     for (int i = 0; i < 100; i++)
     {

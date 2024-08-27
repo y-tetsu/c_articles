@@ -4,7 +4,7 @@
 int shared_data = 0;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;  // ミューテックスの初期化
 
-void* thread_func(void* arg)
+void *thread_func(void *arg)
 {
     for (int i = 0; i < 1000000; i++)
     {
