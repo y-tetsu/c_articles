@@ -5,7 +5,7 @@ int main()
 {
     unsigned int x;
 
-    x= UINT_MAX;  // unsigned int 型の最大値を格納
+    x = UINT_MAX;  // unsigned int 型の最大値を格納
     printf("before    : %11u\n", x);
 
     x += 1;  // 最大値側のオーバーフローが発生
