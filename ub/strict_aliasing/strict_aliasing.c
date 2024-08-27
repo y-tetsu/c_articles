@@ -3,13 +3,13 @@
 int main()
 {
     int x = 10;
-    float *p = (float *)&x;
+    float *ptr = (float *)&x;
 
-    printf("x = %d, *p = %f\n", x, *p);
+    printf("x = %d, *ptr = %f\n", x, *ptr);
 
-    *p = 5.69f;
+    *ptr = 5.69f;
 
-    printf("x = %d, *p = %f\n", x, *p);
+    printf("x = %d, *ptr = %f\n", x, *ptr);
 
     return 0;
 }
