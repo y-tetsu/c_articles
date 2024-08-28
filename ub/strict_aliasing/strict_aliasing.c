@@ -1,15 +1,21 @@
 #include <stdio.h>
 
+int hoge(int* ptr)
+{
+    int a = *ptr;
+
+    *(short*)ptr = 20;
+    printf("*ptr = %d\n", *ptr);
+    printf("*ptr = %d\n", *ptr);
+
+    return a;
+}
+
 int main()
 {
     int x = 10;
-    float *ptr = (float *)&x;
 
-    printf("x = %d, *ptr = %f\n", x, *ptr);
-
-    *ptr = 5.69f;
-
-    printf("x = %d, *ptr = %f\n", x, *ptr);
+    hoge(&x);
 
     return 0;
 }
