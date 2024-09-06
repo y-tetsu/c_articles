@@ -11,5 +11,8 @@ int main()
     a = false;
     printf("false = %d\n", a);
 
+    a = 5;
+    printf("5     = %d\n", a);
+
     return 0;
 }
