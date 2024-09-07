@@ -1,6 +1,14 @@
 # c_practice
 C practice
 
+```
+$ gcc --version
+gcc (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 14.1.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
 ## little_known_or_unforgivable
 [C言語の知られザル・許されザル仕様](https://qiita.com/y-tetsu/items/d839baff7b9f7f54704a)
 
