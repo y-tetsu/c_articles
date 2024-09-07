@@ -7,7 +7,7 @@ void goodbye()
 
     abort();
 
-    printf("hello again.\n");
+    printf("hello again. (but...)\n");
 }
 
 int main()
