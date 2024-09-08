@@ -8,24 +8,19 @@
 
 char* type_to_string(type x)
 {
-    char* ret;
-
     switch (x)
     {
         case int:
-            ret = "int";
-            break;
+            return "int";
         case double:
-            ret = "double";
-            break;
+            return "double";
         case string:
-            ret = "string";
-            break;
+            return "string";
         default:
-            ret = "unknown";
-            break;
+            return "unknown";
     }
-    return ret;
+
+    return NULL;
 }
 
 int main()
