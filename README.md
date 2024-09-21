@@ -4,7 +4,7 @@ My C articles
 
 ## Contents
 
-- [little_known_or_unforgivable](https://github.com/y-tetsu/c_practice/tree/main/little_known_or_unforgivable)
+- [Unknown and unforgivable specifications of the C language](https://github.com/y-tetsu/c_practice/tree/main/little_known_or_unforgivable)
 - [ub](https://github.com/y-tetsu/c_practice/tree/main/ub)
 - [10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
 
