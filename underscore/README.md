@@ -1,5 +1,5 @@
 # 【C言語】アンダースコアではじまる10の予約語
-https://qiita.com/y-tetsu/items/204fb43c3b9ac91827a0
+https://qiita.com/y-tetsu/items/06e5bf148bc70986bfbb
 
 ## 目次
 ### はじめに
