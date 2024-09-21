@@ -7,8 +7,10 @@ My C articles
 ![unknown_and_unforgivable](./images/unknown_and_unforgivable.png)
 - [Unknown and unforgivable specifications of the C language](https://github.com/y-tetsu/c_practice/tree/main/unknown_and_unforgivable)
 
+![ub](./images/ub.png)
 - [I'm so tired of undefined behaviors, I can't move...](https://github.com/y-tetsu/c_practice/tree/main/ub)
 
+![underscore](./images/underscore.png)
 - [10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
 
 
