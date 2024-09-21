@@ -6,7 +6,7 @@ My C articles
 
 - [little_known_or_unforgivable](https://github.com/y-tetsu/c_practice/tree/main/little_known_or_unforgivable)
 - [ub](https://github.com/y-tetsu/c_practice/tree/main/ub)
-- [\[C Language\] 10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
+- [10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
 
 
 ## Environment
