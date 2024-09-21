@@ -1,5 +1,5 @@
 # c_articles
-my C articles
+My C articles
 
 
 ## Contents
