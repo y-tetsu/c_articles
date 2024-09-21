@@ -1,19 +1,15 @@
-# c_practice
-C言語おためし
-
-## コンテンツ
-
-### little_known_or_unforgivable
-[C言語の知られザル・許されザル仕様](https://github.com/y-tetsu/c_practice/tree/main/little_known_or_unforgivable)
-
-### ub
-[【C言語】ハァ… 困ったなァ 「未定義動作」にもう疲れちゃって 全然動けなくてェ…](https://github.com/y-tetsu/c_practice/tree/main/ub)
-
-### underscore
-[【C言語】アンダースコアではじまる10の予約語](https://github.com/y-tetsu/c_practice/tree/main/underscore)
+# c_articles
+my C articles
 
 
-## コンパイラ
+## Contents
+
+- [little_known_or_unforgivable](https://github.com/y-tetsu/c_practice/tree/main/little_known_or_unforgivable)
+- [ub](https://github.com/y-tetsu/c_practice/tree/main/ub)
+- [underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
+
+
+## Environment
 
 ```
 $ gcc --version
