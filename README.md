@@ -5,7 +5,7 @@ My C articles
 ## Contents
 
 - [Unknown and unforgivable specifications of the C language](https://github.com/y-tetsu/c_practice/tree/main/unknown_or_unforgivable)
-- [ub](https://github.com/y-tetsu/c_practice/tree/main/ub)
+- [I'm so tired of undefined behaviors, I can't move...](https://github.com/y-tetsu/c_practice/tree/main/ub)
 - [10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
 
 
