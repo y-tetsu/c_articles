@@ -331,6 +331,7 @@ a is 10
 int main()
 {
     int a = 5;
+    //　↓ extra rounded bracket
     if ((a = 10))
     {
         printf("a is 10\n");
