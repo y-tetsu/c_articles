@@ -2,7 +2,9 @@
 ![ub](../images/ub.png)
 
 # What is undefined behavior?
+
 # Undefined behavior that cause “I'm so tired I can't move..."
+
 ## division by zero
 What was the first thing that came to your mind when you heard the word “undefined begavior”? In my case, it was “divide the value of a variable by `0`,” or division by zero. This is one of the most popular and familiar operations, isn't it?
 
@@ -18,7 +20,7 @@ int main()
     int y = 0;
 
     printf("x , y = %d , %d\n", x, y);
-    printf("x / y = %d\n", x / y);  // ゼロ除算
+    printf("x / y = %d\n", x / y);  // division by zero
 
     return 0;
 }
@@ -81,7 +83,7 @@ x , y = 10[New Thread 2136.0x21b8]
 
 Thread 1 received signal SIGFPE, Arithmetic exception.
 0x00007ff70ba814dd in main () at div0_int.c:9
-9           printf("x / y = %d\n", x / y);  // ゼロ除算
+9           printf("x / y = %d\n", x / y);  // division by zero
 (gdb)
 ```
 
@@ -105,7 +107,7 @@ int main()
     double y = 0.0;
 
     printf("x , y = %f , %f\n", x, y);
-    printf("x / y = %f\n", x / y);  // ゼロ除算
+    printf("x / y = %f\n", x / y);  // division by zero
 
     return 0;
 }
@@ -146,7 +148,7 @@ int main()
 {
     int arr[3] = {1, 2, 3};
 
-    printf("%d\n", arr[3]);  // 領域外アクセス
+    printf("%d\n", arr[3]);  // extra-regional access
 
     return 0;
 }
@@ -250,8 +252,8 @@ int main()
 
     printf("global : %d\n", global_var);
     printf("static : %d\n", static_var);
-    printf("local1 : %d\n", local_var1);  // 未初期化の自動変数へアクセス
-    printf("local2 : %d\n", local_var2);  // 未初期化の自動変数へアクセス
+    printf("local1 : %d\n", local_var1);  // Access to uninitialized automatic variables
+    printf("local2 : %d\n", local_var2);  // Access to uninitialized automatic variables
 
     return 0;
 }
