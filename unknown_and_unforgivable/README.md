@@ -1,9 +1,15 @@
 # Unknown and unforgivable specifications of the C language
 ![unknown_and_unforgivable](../images/unknown_and_unforgivable.png)
 
+I leave a memorandum about the **unknown** and **unforgivable** specifications of the C language as I feel it.
+
 # Unknown specifications
+I am ashamed to introduce a series that I was not previously aware of.
 
 ## digraph
+From the name??? It was. But this is to represent a symbol that does not exist on some keyboards with another **two letters**.
+
+!? ...I'm still not sure.
 
 (sample code)
 ```digraph.c
@@ -17,12 +23,20 @@ int main()
 }
 ```
 
-(result)
+(execution result)
 ```
 $ gcc ./digraph.c -o digraph
 $ ./digraph
 arr[0]=1, arr[1]=10
 ```
+
+Regarding the output content of the above execution result, the first line is the execution of the compilation, the second line is the execution of the code.
+
+And the third line is the output result of the `printf` written in the crucial code.
+
+Actually, this code **only prints two elements of an array** with initial value settings.
+
+Then, see below what happens if you write without digraphs. (Please compare a little up and down for a moment)
 
 ```no_digraph.c
 #include <stdio.h>
@@ -35,6 +49,12 @@ int main()
 }
 ```
 
+I hope you can see where it differs from the previous code.
+
+The point is that if you type `<:` instead of `[`, it will be treated as `[`. This means that you can write C even if your (ancient) keyboard does not support `[` input! 
+
+I will leave you with a list of such digraphs.
+
 |digraph |equivalent character |
 |---|---|
 |<: |[ |
@@ -42,6 +62,8 @@ int main()
 |<% |{ |
 |%> |} |
 |%: |# |
+
+Hmmm, this is unknown....
 
 
 ## trigraph
