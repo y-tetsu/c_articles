@@ -4,7 +4,7 @@ These are my articles about C language.
 ## Contents
 
 ![unknown_and_unforgivable](./images/unknown_and_unforgivable.png)
-- [Unknown and unforgivable specifications of the C language](https://github.com/y-tetsu/c_practice/tree/main/unknown_and_unforgivable)
+- [Unknown and unforgivable specifications of the C language](https://github.com/y-tetsu/c_articles/tree/main/unknown_and_unforgivable#unknown-and-unforgivable-specifications-of-the-c-language)
 
 ![ub](./images/ub.png)
 - [I'm so tired of undefined behaviors, I can't move...](https://github.com/y-tetsu/c_practice/tree/main/ub)
