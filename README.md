@@ -7,10 +7,10 @@ These are my articles about C language.
 - [Unknown and unforgivable specifications of the C language](https://github.com/y-tetsu/c_articles/tree/main/unknown_and_unforgivable#unknown-and-unforgivable-specifications-of-the-c-language)
 
 ![ub](./images/ub.png)
-- [I'm so tired of undefined behaviors, I can't move...](https://github.com/y-tetsu/c_practice/tree/main/ub)
+- [I'm so tired of undefined behaviors, I can't move...](https://github.com/y-tetsu/c_articles/tree/main/ub#im-so-tired-of-undefined-behaviors-i-cant-move)
 
 ![underscore](./images/underscore.png)
-- [10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_practice/tree/main/underscore)
+- [10 Reserved Words Beginning with Underscore](https://github.com/y-tetsu/c_articles/tree/main/underscore#10-reserved-words-beginning-with-underscore)
 
 
 ## Environment
