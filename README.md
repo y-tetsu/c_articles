@@ -1,6 +1,5 @@
 # c_articles
-My C articles
-
+These are my articles about C language.
 
 ## Contents
 
