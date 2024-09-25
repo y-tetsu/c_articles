@@ -3,6 +3,11 @@
 
 # About Reserved Words
 
+> `_Alignas`、`_Alignof`、`_Atomic`、`_Bool`、`_Complex`、`_Generic`、`_Imaginary`、`_Noreturn`、`_Static_assert`、`_Thread_local`
+
+How about you? Did you know about any of them?
+
+
 # Meaning of underscore
 
 # Keywords beginning with underscore
@@ -83,15 +88,17 @@ false = 0
 
 int main()
 {
-    double _Complex z1 = 1.0 + 2.0 * I;  // 1 + 2i
-    double _Complex z2 = 1.0 - 1.0 * I;  // 1 - i
+    double _Complex z1 = 1.0 + 2.0 * I;  // complex number 1 + 2i
+    double _Complex z2 = 1.0 - 1.0 * I;  // complex number 1 - i
 
     printf("z1 : %.1f + %.1fi\n", creal(z1), cimag(z1));
     printf("z2 : %.1f + %.1fi\n", creal(z2), cimag(z2));
 
+    // addition
     double _Complex z3 = z1 + z2;
     printf("z3 : %.1f + %.1fi\n", creal(z3), cimag(z3));
 
+    // Rotate z3 90° counterclockwise around the origin
     double _Complex z4 = z3 * I;
     printf("z4 : %.1f + %.1fi\n", creal(z4), cimag(z4));
 
@@ -159,7 +166,7 @@ void *thread_func(void* arg)
 {
     for (int i=0; i<1000000; i++)
     {
-        counter++;
+        counter++;  // Add counters (shared by two threads)
     }
 
     return NULL;
@@ -169,12 +176,15 @@ int main()
 {
     pthread_t thread1, thread2;
 
+    // Create two threads
     pthread_create(&thread1, NULL, thread_func, NULL);
     pthread_create(&thread2, NULL, thread_func, NULL);
 
+    // Wait for thread to end
     pthread_join(thread1, NULL);
     pthread_join(thread2, NULL);
 
+    // Show Results
     printf("counter: %d\n", counter);
 
     return 0;
@@ -198,7 +208,7 @@ void *thread_func(void* arg)
 {
     for (int i=0; i<1000000; i++)
     {
-        atomic_fetch_add(&counter, 1);
+        atomic_fetch_add(&counter, 1); // Atomic increment of counter
     }
 
     return NULL;
@@ -208,12 +218,15 @@ int main()
 {
     pthread_t thread1, thread2;
 
+    // Create two threads
     pthread_create(&thread1, NULL, thread_func, NULL);
     pthread_create(&thread2, NULL, thread_func, NULL);
 
+    // Wait for thread to end
     pthread_join(thread1, NULL);
     pthread_join(thread2, NULL);
 
+    // Show Results
     printf("counter: %d\n", counter);
 
     return 0;
@@ -227,7 +240,7 @@ _Atomic int counter = 0;
 
 ```c
 #include <stdatomic.h>
-atomic_fetch_add(&counter, 1);
+atomic_fetch_add(&counter, 1); // Atomic increment of counter
 ```
 
 
@@ -250,7 +263,7 @@ void *thread_func(void* arg)
 {
     for (int i=0; i<1000000; i++)
     {
-        counter++;
+        counter++;  // Add counters (unique in two threads)
     }
 
     printf("thread_func counter : %d\n", counter);
@@ -262,12 +275,15 @@ int main()
 {
     pthread_t thread1, thread2;
 
+    // Create two threads
     pthread_create(&thread1, NULL, thread_func, NULL);
     pthread_create(&thread2, NULL, thread_func, NULL);
 
+    // Wait for thread to end
     pthread_join(thread1, NULL);
     pthread_join(thread2, NULL);
 
+    // Show Results
     printf("counter: %d\n", counter);
 
     return 0;
@@ -283,7 +299,7 @@ void *thread_func(void* arg)
 {
     for (int i=0; i<1000000; i++)
     {
-        counter++;
+        counter++;  // Add counters (unique in two threads)
     }
 
     printf("thread_func counter : %d\n", counter);
