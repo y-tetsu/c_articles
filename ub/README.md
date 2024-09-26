@@ -1,7 +1,45 @@
 # I'm so tired of undefined behaviors, I can't move...
 ![ub](../images/ub.png)
 
+While I was learning the C language, I came across something called undefined behavior.
+
+When I was researching undefined behaviors, I found that they are full of elements that cause “I'm so tired, I can't move...”
+
+So, I would like to introduce the contents focusing on various **undefined behaviors**.
+
+
 # What is undefined behavior?
+
+[Wikipedia](https://en.wikipedia.org/wiki/Undefined_behavior#:~:text=In%20computer%20programming,%20undefined%20behavior%20(UB)) describes the undefined behavior as follows
+
+> In computer programming, undefined behavior (UB) is the result of executing a program whose behavior is prescribed to be unpredictable, in the language specification of the programming language in which the source code is written.
+
+I see. I guess it is as the saying goes.
+
+In the C language, which is the main subject of this article, “within the rules of the program and outside the rules” is also defined.
+
+If it is outside the rules, it will cause undefined behavior (UB), which is not guaranteed! (From now on, I would like to get used to this so that I will be able to recognize UB as soon as it is mentioned.)
+
+...And I also found some more descriptions that smelled fishy.
+
+> undefined behavior as allowing the compiler to do anything it chooses, even "to make demons fly out of your nose".
+
+??? ...... What an original expression!
+
+Actually, C code does not mean that you are allowed to write anything as long as the syntax is correct.
+
+So what exactly do we have to offer to make demons fly out of your nose?
+
+(note)
+> The results of the operation checks in this article are based on GCC 14.1.0 on Windows 10.
+
+(alert)
+> The results of executing any of the codes presented in this article are not known what will happen, and there is no guarantee of operation.
+>
+> The author assumes no responsibility for any damage or malfunction caused by the use of the code in this article. Users should execute this code at their own risk.
+>
+> When using the code, please take care to ensure that it is executed safely in an appropriate environment.
+
 
 # Undefined behavior that cause “I'm so tired I can't move..."
 
