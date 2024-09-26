@@ -31,14 +31,18 @@ Actually, C code does not mean that you are allowed to write anything as long as
 So what exactly do we have to offer to make demons fly out of your nose?
 
 (note)
-> The results of the operation checks in this article are based on GCC 14.1.0 on Windows 10.
+```
+The results of the operation checks in this article are based on GCC 14.1.0 on Windows 10.
+```
 
 (alert)
-> The results of executing any of the codes presented in this article are not known what will happen, and there is no guarantee of operation.
->
-> The author assumes no responsibility for any damage or malfunction caused by the use of the code in this article. Users should execute this code at their own risk.
->
-> When using the code, please take care to ensure that it is executed safely in an appropriate environment.
+```
+The results of executing any of the codes presented in this article are not known what will happen, and there is no guarantee of operation.
+
+The author assumes no responsibility for any damage or malfunction caused by the use of the code in this article. Users should execute this code at their own risk.
+
+When using the code, please take care to ensure that it is executed safely in an appropriate environment.
+```
 
 
 # Undefined behavior that cause “I'm so tired I can't move..."
@@ -174,7 +178,9 @@ As far as we tested it, it “just happened to work like that,” but when we pu
 I am sure that there are many of you who have had countless episodes of drama and taboo, of “I'm so tired, I can't move...”...
 
 (note)
-> The modulo (remainder to find the remainder) operation with `%` is undefined, as is the division by `/` with `0`.
+```
+The modulo (remainder to find the remainder) operation with `%` is undefined, as is the division by `/` with `0`.
+```
 
 
 ## extra-regional access
